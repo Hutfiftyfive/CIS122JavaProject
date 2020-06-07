@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Main {
+
+    public static void main(String[] args)
+    {
+	    String[] arr = {"Apple", "Orange", "Pizza"}; //temporary String array will change out when database of foods is added
+	    String temp; //will delete when database is added
+	    Scanner input = new Scanner(System.in); //user input
+
+        System.out.println("What food did you consume");
+	    temp = input.nextLine(); //user input
+
+	    for (int i = 0; i < arr.length; i++) { //for loop will iterate for every item in the database
+            if (temp.equalsIgnoreCase(arr[i])) //checks if user input matches anything in the database
+            {
+                 System.out.println("We found a match"); //print statement saying match was found
+                break; //breaks out of the for loop if match is found
+            }
+            else
+            {
+                System.out.println("We did not find a match"); //Print statement for saying was not found
+            }
+    }
+    }
+}
