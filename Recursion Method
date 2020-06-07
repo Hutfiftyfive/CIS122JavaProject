@@ -1,0 +1,33 @@
+import java.util.Scanner; //imports the scanner
+
+public class Main {
+
+    public static int recursion(int num) //recursion method
+    {
+        int temp;
+        Scanner input = new Scanner(System.in); //implementation of scanner
+
+        temp = input.nextInt();//change to next line when String implementation is implemented
+
+        //add change String to calorie num value when method is made.
+            if (temp == 0){
+               // System.out.println(num); //prints out current calorie input. Change format later
+                num += temp;
+            }
+            else
+            {
+                num += temp;  //gets the summary of all calories
+                recursion(num); //call to recursion method
+            }
+
+        return num; //end of method returns the total.
+    }
+    public static void main(String[] args) {
+
+        int num = 0; //variable used for method call
+        System.out.println("Enter your number"); //temp println
+
+        System.out.println(recursion(num)); //initial call of the method and prints out result
+
+    }
+}
