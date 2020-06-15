@@ -6,7 +6,7 @@ public class Methods {
 /*------------------------------------------------------------------------------------------------------*/	
 /*------------------------------------------------------------------------------------------------------*/	
 //Start of Alejandro Castillo Code	
-	
+	//This method get information from user to determine how much water is needed in that day
 	public static String getHydration(double avgMass, double massBefore,double massAfter,double hours) {
 		//drink oz in mass
 		
@@ -19,6 +19,7 @@ public class Methods {
 	}
   
 /*------------------------------------------------------------------------------------------------------*/	
+	//method determines if food is heathy depending on fat percent
 	
   public static String getFood( double cal,double fat) {
 		double 
@@ -32,7 +33,7 @@ public class Methods {
 	}
   
  /*------------------------------------------------------------------------------------------------------*/  
-  
+  //This method gets user input to calculate BMR is later used to get calories needed 
   public static double getBMR(String gender, double height, int age,double weight) {
 		double BMR;
 		
@@ -49,7 +50,8 @@ public class Methods {
 	}
 	
  /*------------------------------------------------------------------------------------------------------*/
-  
+  //Lets user know how many calories are need to maintain curren body weight depending on many paramaters 
+  //including gender and level of excercise	
 	public static double getCal(int E,String gender, double height, int age,double weight) {
 		
 /*Enter level of excercise: 
@@ -76,7 +78,7 @@ public class Methods {
 }
 
 /*------------------------------------------------------------------------------------------------------*/
-	
+	//Uses a astandard formula to get BMI for user 
 public static double getBMI(double weight, double feet, double inches) {
 		double weightInKilos = weight * 0.453592; //pounds entered converted to kilos
         double heightInMeters = (((feet * 12) + inches) * .0254); //converts the feet and inches entered into meters which is what is used for BMI
@@ -86,6 +88,7 @@ public static double getBMI(double weight, double feet, double inches) {
 }
 
 /*------------------------------------------------------------------------------------------------------*/
+	//This method interprets the BMI the user got prior
 	public static String interpretBMI(double BMI) {         //This method uses the BMI calculated with getBMI 
 		if (BMI < 18.5 ) {									//to interpret the data into a String 
             return "Underweight";							//will show in box
