@@ -7,6 +7,8 @@ public class CalorieMap {
 	
 	public static void main(String[] args) {
 		//the food name is key tied to a calorie value
+		//all foods are lower case to work with .ignoreCase
+		
 		//fruit calorie map
 		HashMap<String, Integer> fruitCalorieMap = new HashMap<String, Integer>();
 		
